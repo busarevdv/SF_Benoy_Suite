@@ -24,8 +24,7 @@
     <introduction-sect>
       <fm-sect index="0" mgt-only="false" split-cmt="true" cmt-opt="1">
     <fm-sect-name><![CDATA[Employee Information]]></fm-sect-name>
-        <fm-sect-intro><![CDATA[
-]]></fm-sect-intro>
+        <fm-sect-intro><![CDATA[ ]]></fm-sect-intro>
         <fm-sect-config>
           <rating-label><![CDATA[Rating]]></rating-label>
           <rating-label-others><![CDATA[Rating]]></rating-label-others>
