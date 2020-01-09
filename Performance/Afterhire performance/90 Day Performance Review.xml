@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sf-form PUBLIC
+ "-//SuccessFactors, Inc.//DTD V4 Form 1.0//EN"
+ "http://svn/viewvc/svn/V4/trunk/src/com/sf/dtd/sf-form.dtd?view=co">
+<sf-form locale="en_US">
+  <fm-meta>
+    <meta-form-id>-1</meta-form-id>
+    <meta-rated>true</meta-rated>
+    <meta-rating>0.0</meta-rating>
+    <meta-scale>0.0</meta-scale>
+    <meta-grp-label><![CDATA[Group]]></meta-grp-label>
+    <fm-sect-scale show-value="false">
+      <scale-source>1</scale-source>
+      <scale-id><![CDATA[Default Scale]]></scale-id>
+      <scale-type><![CDATA[null]]></scale-type>
+      <scale-adjusted-calculation enable="false"  display-calculated-rating="false">
+      </scale-adjusted-calculation>
+    </fm-sect-scale>
+    <meta-item-weight-floor-ceiling-option>enforce</meta-item-weight-floor-ceiling-option>
+    <enable-previous-step-button><![CDATA[false]]></enable-previous-step-button>
+    <enable-delete-button><![CDATA[false]]></enable-delete-button>
+    <button-permission type="none">
+      <role-name>*</role-name>
+      <button refid="get-comments"/>
+      <button refid="add-signer"/>
+    </button-permission>
+    <button-permission type="enabled">
+      <role-name>EM</role-name>
+      <button refid="get-comments"/>
+      <button refid="add-signer"/>
+    </button-permission>
+    <others-ratingtab-permission type="none">
+      <role-name>*</role-name>
+      <route-step stepid="*"/>
+    </others-ratingtab-permission>
+    <others-ratingtab-permission type="enabled">
+      <role-name>EM</role-name>
+      <route-step stepid="*"/>
+    </others-ratingtab-permission>
+  </fm-meta>
+  <sf-pmreview no-calc="false" overall-rating="true" rate-by-adding-values="false" weight-lockdown="true" show-weight="true">
+    <userinfo-sect>
+      <fm-sect index="0" mgt-only="false" split-cmt="true" cmt-opt="1">
+    <fm-sect-name><![CDATA[Employee Information]]></fm-sect-name>
+        <fm-sect-intro><![CDATA[
+]]></fm-sect-intro>
+        <fm-sect-config>
+          <rating-label><![CDATA[Rating]]></rating-label>
+          <rating-label-others><![CDATA[Rating]]></rating-label-others>
+          <default-rating><![CDATA[unrated]]></default-rating>
+          <hidden-strength-threshold>0.0</hidden-strength-threshold>
+          <blind-spot-threshold>0.0</blind-spot-threshold>
+          <num-decimal-places>2</num-decimal-places>
+          <publish-button-label><![CDATA[Publish Content]]></publish-button-label>
+        </fm-sect-config>
+        <fm-element index="0" type="3">
+          <ekey><![CDATA[LASTNAME]]></ekey>
+          <ename><![CDATA[]]></ename>
+          <evalue><![CDATA[]]></evalue>
+        </fm-element>
+        <fm-element index="1" type="3">
+          <ekey><![CDATA[FIRSTNAME]]></ekey>
+          <ename><![CDATA[]]></ename>
+          <evalue><![CDATA[]]></evalue>
+        </fm-element>
+        <fm-element index="2" type="3">
+          <ekey><![CDATA[TITLE]]></ekey>
+          <ename><![CDATA[]]></ename>
+          <evalue><![CDATA[]]></evalue>
+        </fm-element>
+        <fm-element index="3" type="3">
+          <ekey><![CDATA[DEPARTMENT]]></ekey>
+          <ename><![CDATA[]]></ename>
+          <evalue><![CDATA[]]></evalue>
+        </fm-element>
+        <fm-element index="4" type="3">
+          <ekey><![CDATA[HIREDATE]]></ekey>
+          <ename><![CDATA[]]></ename>
+          <evalue><![CDATA[]]></evalue>
+        </fm-element>
+        <fm-element index="5" type="3">
+          <ekey><![CDATA[JOBCODE]]></ekey>
+          <ename><![CDATA[]]></ename>
+          <evalue><![CDATA[]]></evalue>
+        </fm-element>
+      </fm-sect>
+    </userinfo-sect>
+    <reviewinfo-sect index="1">
+      <reviewinfo-sect-name><![CDATA[Review Dates]]></reviewinfo-sect-name>
+      <fm-sect-config>
+        <rating-label><![CDATA[Rating]]></rating-label>
+        <rating-label-others><![CDATA[Rating]]></rating-label-others>
+        <default-rating><![CDATA[unrated]]></default-rating>
+        <hidden-strength-threshold>0.0</hidden-strength-threshold>
+        <blind-spot-threshold>0.0</blind-spot-threshold>
+        <section-permission type="disabled">
+          <role-name>*</role-name>
+          <route-step stepid="*"/>
+        </section-permission>
+        <num-decimal-places>2</num-decimal-places>
+        <publish-button-label><![CDATA[Publish Content]]></publish-button-label>
+      </fm-sect-config>
+    </reviewinfo-sect>
+    <objective-sect index="2" configurable="true" mgt-only="false" use-jobcode="false" no-rate="false" develop-goal="false" show-learning-activity-competency="false" no-weight="true" summ-opt="999" split-cmt="true" rating-opt="3" cmt-opt="0" in-summ-display="true" in-overall-rating="true" no-group="true" use-milestone="false" if-no-ratings-then-ignore-section="true" lock-item-weights="false" in-objcomp-summ-display="true" in-objcomp-summ-overall-rating="true" auto-pop-weights="true" show-obj-expected-rating="false" min-goals-required="-2147483648" max-goals-allowed="2147483647" allow-draft-tgm-goals="false" hide-addexistinggoals-btn="false" sect-mode="normal" ez-rater-expand-all="false" obj-edit="popup" show-calculated-section-rating="true" avoid-obj-plan-state-change-by-multiple-forms="false" use-mlt-rating-if-present="false">
+      <obj-sect-name><![CDATA[Goals]]></obj-sect-name>
+      <obj-sect-intro><![CDATA[
+This section is for evaluating accomplishments of goals. 
+[[BREAK]][[BREAK]]
+The weights for the goals in this section must add up to 100, and there must be a rating for each goal before the form is sent for signatures.
+]]></obj-sect-intro>
+      <fm-sect-config>
+        <rating-label><![CDATA[Rating]]></rating-label>
+        <rating-label-others><![CDATA[Rating]]></rating-label-others>
+        <default-rating><![CDATA[Select a rating...]]></default-rating>
+        <unrated-rating><![CDATA[Unable to Rate]]></unrated-rating>
+        <weight-total><![CDATA[100.0]]></weight-total>
+        <hidden-strength-threshold>0.0</hidden-strength-threshold>
+        <blind-spot-threshold>0.0</blind-spot-threshold>
+        <section-comments-label><![CDATA[Overall Comments on Goal Achievement]]></section-comments-label>
+        <required-fields>
+          <role-name>EM</role-name>
+          <field refid="item-rating" min-value="-1.0" max-value="-1.0"/>
+          <field refid="item-weight" min-value="1.0" max-value="100.0"/>
+          <send-action sendid="next_step"/>
+        </required-fields>
+        <weight-total-option><![CDATA[enforce]]></weight-total-option>
+        <num-decimal-places>2</num-decimal-places>
+        <publish-button-label><![CDATA[Publish Content]]></publish-button-label>
+      </fm-sect-config>
+      <field-permission type="read">
+        <role-name>*</role-name>
+        <field refid="item-weight"></field>
+      </field-permission>
+      <field-permission type="write">
+        <role-name>EM</role-name>
+        <field refid="item-weight"></field>
+      </field-permission>
+      <sect-weight>50.0</sect-weight>
+      <sect-weight-4-objcomp-summary>50.0</sect-weight-4-objcomp-summary>
+      <fm-sect-scale show-value="true">
+        <scale-source>1</scale-source>
+        <scale-id><![CDATA[Default Scale]]></scale-id>
+        <scale-type><![CDATA[null]]></scale-type>
+      </fm-sect-scale>
+      <obj-sect-type autosync="false"><![CDATA[plan]]></obj-sect-type>
+      <obj-sect-plan-id>18</obj-sect-plan-id>
+      <meta-grp-label><![CDATA[Group]]></meta-grp-label>
+    </objective-sect>
+    <competency-sect index="3" configurable="false" mgt-only="false" use-jobcode="false" use-core-comp="true" category-filter-opt="specified-category" no-rate="false" no-weight="true" summ-opt="999" split-cmt="true" rating-opt="3" cmt-opt="2" suppress-item-comments="0" behavior-rating-opt="0" behavior-cmt-opt="1" behavior-mode-opt="0" in-summ-display="true" in-overall-rating="true" no-group="true" use-behavior="false" if-no-ratings-then-ignore-section="true" lock-item-weights="false" in-objcomp-summ-display="true" in-objcomp-summ-overall-rating="true" show-comp-expected-rating="false" show-comp-proficiency-level="false" comp-expected-rating-format="0" show-behavior-expected-rating="false" behavior-expected-rating-format="0" behavior-weighted="false" min-competencies-required="-2147483648" max-competencies-allowed="2147483647" sect-mode="normal" ez-rater-expand-all="false" show-calculated-section-rating="true" lock-behavior-content="false" hide-waca="false">
+      <comp-sect-name><![CDATA[Core Values]]></comp-sect-name>
+      <comp-sect-intro><![CDATA[
+This section is for evaluating the accomplishments of the Core Competencies.
+[[BREAK]][[BREAK]]
+Each competency should have a rating and comments before moving on to the next section.
+]]></comp-sect-intro>
+      <fm-sect-config>
+        <rating-label><![CDATA[Rating]]></rating-label>
+        <rating-label-others><![CDATA[Rating]]></rating-label-others>
+        <default-rating><![CDATA[Select a rating...]]></default-rating>
+        <unrated-rating><![CDATA[Unable to Rate]]></unrated-rating>
+        <hidden-strength-threshold>0.0</hidden-strength-threshold>
+        <blind-spot-threshold>0.0</blind-spot-threshold>
+        <required-fields>
+          <role-name>EM</role-name>
+          <field refid="item-rating" min-value="-1.0" max-value="-1.0"/>
+          <send-action sendid="next_step"/>
+        </required-fields>
+        <num-decimal-places>2</num-decimal-places>
+        <publish-button-label><![CDATA[Publish Content]]></publish-button-label>
+      </fm-sect-config>
+      <field-permission type="read">
+        <role-name>*</role-name>
+        <field refid="item-weight"></field>
+      </field-permission>
+      <field-permission type="write">
+        <role-name>EM</role-name>
+        <field refid="item-weight"></field>
+      </field-permission>
+      <sect-weight>20.0</sect-weight>
+      <sect-weight-4-objcomp-summary>20.0</sect-weight-4-objcomp-summary>
+      <fm-sect-scale show-value="true">
+        <scale-source>1</scale-source>
+        <scale-id><![CDATA[Default Scale]]></scale-id>
+        <scale-type><![CDATA[null]]></scale-type>
+      </fm-sect-scale>
+      <comp-category><![CDATA[Core Values]]></comp-category>
+      <meta-grp-label><![CDATA[Group]]></meta-grp-label>
+    </competency-sect>
+    <competency-sect index="4" configurable="false" mgt-only="false" use-jobcode="true" use-core-comp="false" category-filter-opt="no-filter" no-rate="false" no-weight="true" summ-opt="999" split-cmt="true" rating-opt="3" cmt-opt="2" suppress-item-comments="0" behavior-rating-opt="0" behavior-cmt-opt="1" behavior-mode-opt="0" in-summ-display="true" in-overall-rating="true" no-group="true" use-behavior="false" if-no-ratings-then-ignore-section="true" lock-item-weights="false" in-objcomp-summ-display="true" in-objcomp-summ-overall-rating="true" show-comp-expected-rating="false" show-comp-proficiency-level="false" comp-expected-rating-format="0" show-behavior-expected-rating="false" behavior-expected-rating-format="0" behavior-weighted="false" min-competencies-required="-2147483648" max-competencies-allowed="2147483647" sect-mode="normal" ez-rater-expand-all="false" show-calculated-section-rating="true" lock-behavior-content="false" hide-waca="false">
+      <comp-sect-name><![CDATA[Role Specific Competencies]]></comp-sect-name>
+      <comp-sect-intro><![CDATA[
+This section is for evaluating the accomplishments of Job Specific Competencies. 
+[[BREAK]][[BREAK]]
+Each competency should have a rating and comments before moving on to the next section.
+]]></comp-sect-intro>
+      <fm-sect-config>
+        <rating-label><![CDATA[Rating]]></rating-label>
+        <rating-label-others><![CDATA[Rating]]></rating-label-others>
+        <default-rating><![CDATA[Select a rating...]]></default-rating>
+        <unrated-rating><![CDATA[Unable to Rate]]></unrated-rating>
+        <hidden-strength-threshold>0.0</hidden-strength-threshold>
+        <blind-spot-threshold>0.0</blind-spot-threshold>
+        <required-fields>
+          <role-name>EM</role-name>
+          <field refid="item-rating" min-value="-1.0" max-value="-1.0"/>
+          <send-action sendid="next_step"/>
+        </required-fields>
+        <num-decimal-places>2</num-decimal-places>
+        <publish-button-label><![CDATA[Publish Content]]></publish-button-label>
+      </fm-sect-config>
+      <action-permission type="none">
+        <role-name>E</role-name>
+        <action refid="add-item"/>
+        <route-step stepid="*"/>
+      </action-permission>
+      <action-permission type="none">
+        <role-name>E</role-name>
+        <action refid="remove-item"/>
+        <route-step stepid="*"/>
+      </action-permission>
+      <action-permission type="enabled">
+        <role-name>EM</role-name>
+        <action refid="add-item"/>
+        <route-step stepid="*"/>
+      </action-permission>
+      <action-permission type="enabled">
+        <role-name>EM</role-name>
+        <action refid="remove-item"/>
+        <route-step stepid="*"/>
+      </action-permission>
+      <field-permission type="read">
+        <role-name>*</role-name>
+        <field refid="item-weight"></field>
+      </field-permission>
+      <field-permission type="write">
+        <role-name>EM</role-name>
+        <field refid="item-weight"></field>
+      </field-permission>
+      <sect-weight>30.0</sect-weight>
+      <sect-weight-4-objcomp-summary>30.0</sect-weight-4-objcomp-summary>
+      <fm-sect-scale show-value="true">
+        <scale-source>1</scale-source>
+        <scale-id><![CDATA[Default Scale]]></scale-id>
+        <scale-type><![CDATA[null]]></scale-type>
+      </fm-sect-scale>
+      <meta-grp-label><![CDATA[Group]]></meta-grp-label>
+    </competency-sect>
+    <custom-sect>
+      <fm-sect index="5" mgt-only="false" split-cmt="true" cmt-opt="1">
+    <fm-sect-name><![CDATA[Strength and Development Comments]]></fm-sect-name>
+        <fm-sect-intro><![CDATA[Please enter your feedback in the designated areas below.]]></fm-sect-intro>
+        <fm-sect-config>
+          <rating-label><![CDATA[Rating]]></rating-label>
+          <rating-label-others><![CDATA[Rating]]></rating-label-others>
+          <default-rating><![CDATA[unrated]]></default-rating>
+          <hidden-strength-threshold>0.0</hidden-strength-threshold>
+          <blind-spot-threshold>0.0</blind-spot-threshold>
+          <num-decimal-places>2</num-decimal-places>
+          <publish-button-label><![CDATA[Publish Content]]></publish-button-label>
+        </fm-sect-config>
+        <fm-element index="-1" type="10">
+          <ekey><![CDATA[]]></ekey>
+          <ename><![CDATA[]]></ename>
+          <evalue><![CDATA[Additional Comments]]></evalue>
+        </fm-element>
+        <fm-element index="1" type="4" mime-type="plain-text">
+          <ekey><![CDATA[commentBox1]]></ekey>
+          <ename><![CDATA[DEVELOPMENT OPPORTUNITIES: <br>Please describe in your own words, the areas that you believe this individual could develop further, in order to be a more effective leader. Please list 3-4 specific items and provide examples if possible.</br>]]></ename>
+          <evalue><![CDATA[]]></evalue>
+        </fm-element>
+        <fm-element index="2" type="4" mime-type="plain-text">
+          <ekey><![CDATA[commentBox2]]></ekey>
+          <ename><![CDATA[STRENGTHS:<br>Please describe in your own words areas that you believe to be this individual’s greatest strengths. Please list 3-4 specific items and provide examples if possible.</br>]]></ename>
+          <evalue><![CDATA[]]></evalue>
+        </fm-element>
+      </fm-sect>
+    </custom-sect>
+    <summary-sect index="6" mgt-only="false" manual-rating="false" override-unrated="false" split-cmt="true" rating-opt="3" cmt-opt="0" show-listing="true" rating-mode="graph" use-adjusted-scale-for-section-header-rating="0" show-group-matrix="true" overall-rating-display-order="manual-calc">
+      <summary-sect-name><![CDATA[Summary Section]]></summary-sect-name>
+      <summary-sect-intro><![CDATA[
+The Manager's ratings are the "ratings of record" and will not be calculated into the overall form calculation until the form is saved in the system. You may save the form by using the save button in the upper right corner of the form to view the total score, or save at the bottom to exit the form.
+ ]]></summary-sect-intro>
+      <fm-sect-config>
+        <rating-label><![CDATA[Overall Form Rating]]></rating-label>
+        <rating-label-others><![CDATA[Overall Form Rating (Employee)]]></rating-label-others>
+        <default-rating><![CDATA[Select a rating...]]></default-rating>
+        <hidden-strength-threshold>0.0</hidden-strength-threshold>
+        <blind-spot-threshold>0.0</blind-spot-threshold>
+        <section-permission type="hidden">
+          <role-name>E</role-name>
+          <route-step stepid="M1"/>
+        </section-permission>
+        <num-decimal-places>2</num-decimal-places>
+        <publish-button-label><![CDATA[Publish Content]]></publish-button-label>
+      </fm-sect-config>
+      <fm-sect-scale show-value="true">
+        <scale-source>1</scale-source>
+        <scale-id><![CDATA[Review Scale]]></scale-id>
+        <scale-type><![CDATA[null]]></scale-type>
+      </fm-sect-scale>
+    </summary-sect>
+    <signature-sect>
+      <fm-sect index="7" mgt-only="false" split-cmt="true" cmt-opt="0">
+    <fm-sect-name><![CDATA[Signatures]]></fm-sect-name>
+        <fm-sect-intro><![CDATA[
+When your review form reaches the Signature Mode, click on the Send button to sign the document.  Your electronic signature will be stored in this section of the form.
+[[BREAK]][[BREAK]]
+Signatures indicate that the Performance Assessment discussion has been held.
+]]></fm-sect-intro>
+        <fm-sect-config>
+          <rating-label><![CDATA[Rating]]></rating-label>
+          <rating-label-others><![CDATA[Rating]]></rating-label-others>
+          <default-rating><![CDATA[unrated]]></default-rating>
+          <hidden-strength-threshold>0.0</hidden-strength-threshold>
+          <blind-spot-threshold>0.0</blind-spot-threshold>
+          <num-decimal-places>2</num-decimal-places>
+          <publish-button-label><![CDATA[Publish Content]]></publish-button-label>
+        </fm-sect-config>
+      </fm-sect>
+    </signature-sect>
+  </sf-pmreview>
+</sf-form>

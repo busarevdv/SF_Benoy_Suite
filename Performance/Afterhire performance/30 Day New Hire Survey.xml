@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sf-form PUBLIC
+ "-//SuccessFactors, Inc.//DTD V4 Form 1.0//EN"
+ "http://svn/viewvc/svn/V4/trunk/src/com/sf/dtd/sf-form.dtd?view=co">
+<sf-form locale="en_US">
+  <fm-meta>
+    <meta-form-id>-1</meta-form-id>
+    <meta-rated>true</meta-rated>
+    <meta-rating>0.0</meta-rating>
+    <meta-scale>0.0</meta-scale>
+    <meta-grp-label><![CDATA[Group]]></meta-grp-label>
+    <fm-sect-scale show-value="true">
+      <scale-source>1</scale-source>
+      <scale-id><![CDATA[Likert]]></scale-id>
+      <scale-type><![CDATA[null]]></scale-type>
+      <scale-adjusted-calculation enable="false"  display-calculated-rating="false">
+      </scale-adjusted-calculation>
+    </fm-sect-scale>
+    <meta-item-weight-floor-ceiling-option>enforce</meta-item-weight-floor-ceiling-option>
+    <enable-previous-step-button><![CDATA[false]]></enable-previous-step-button>
+    <enable-delete-button><![CDATA[false]]></enable-delete-button>
+  </fm-meta>
+  <sf-pmreview no-calc="false" overall-rating="true" rate-by-adding-values="false" weight-lockdown="true" show-weight="true">
+    <introduction-sect>
+      <fm-sect index="0" mgt-only="false" split-cmt="true" cmt-opt="1">
+    <fm-sect-name><![CDATA[Employee Information]]></fm-sect-name>
+        <fm-sect-intro><![CDATA[
+]]></fm-sect-intro>
+        <fm-sect-config>
+          <rating-label><![CDATA[Rating]]></rating-label>
+          <rating-label-others><![CDATA[Rating]]></rating-label-others>
+          <default-rating><![CDATA[unrated]]></default-rating>
+          <hidden-strength-threshold>0.0</hidden-strength-threshold>
+          <blind-spot-threshold>0.0</blind-spot-threshold>
+          <num-decimal-places>2</num-decimal-places>
+          <publish-button-label><![CDATA[Publish Content]]></publish-button-label>
+        </fm-sect-config>
+        <fm-element index="0" type="3">
+          <ekey><![CDATA[LASTNAME]]></ekey>
+          <ename><![CDATA[]]></ename>
+          <evalue><![CDATA[]]></evalue>
+        </fm-element>
+        <fm-element index="1" type="3">
+          <ekey><![CDATA[FIRSTNAME]]></ekey>
+          <ename><![CDATA[]]></ename>
+          <evalue><![CDATA[]]></evalue>
+        </fm-element>
+        <fm-element index="2" type="3">
+          <ekey><![CDATA[TITLE]]></ekey>
+          <ename><![CDATA[]]></ename>
+          <evalue><![CDATA[]]></evalue>
+        </fm-element>
+        <fm-element index="3" type="3">
+          <ekey><![CDATA[DEPARTMENT]]></ekey>
+          <ename><![CDATA[]]></ename>
+          <evalue><![CDATA[]]></evalue>
+        </fm-element>
+        <fm-element index="4" type="3">
+          <ekey><![CDATA[HIREDATE]]></ekey>
+          <ename><![CDATA[]]></ename>
+          <evalue><![CDATA[]]></evalue>
+        </fm-element>
+        <fm-element index="5" type="3">
+          <ekey><![CDATA[JOBCODE]]></ekey>
+          <ename><![CDATA[]]></ename>
+          <evalue><![CDATA[]]></evalue>
+        </fm-element>
+      </fm-sect>
+    </introduction-sect>
+    <competency-sect index="1" configurable="true" mgt-only="false" use-jobcode="false" use-core-comp="false" category-filter-opt="no-filter" no-rate="false" no-weight="true" summ-opt="0" split-cmt="true" rating-opt="3" cmt-opt="0" suppress-item-comments="0" behavior-rating-opt="0" behavior-cmt-opt="1" behavior-mode-opt="0" in-summ-display="false" in-overall-rating="false" no-group="true" use-behavior="false" if-no-ratings-then-ignore-section="true" lock-item-weights="false" in-objcomp-summ-display="false" in-objcomp-summ-overall-rating="false" show-comp-expected-rating="false" show-comp-proficiency-level="false" comp-expected-rating-format="0" show-behavior-expected-rating="false" behavior-expected-rating-format="0" behavior-weighted="false" min-competencies-required="-2147483648" max-competencies-allowed="2147483647" sect-mode="normal" ez-rater-expand-all="false" show-calculated-section-rating="true" lock-behavior-content="false" hide-waca="false">
+      <comp-sect-name><![CDATA[Survey]]></comp-sect-name>
+      <fm-sect-config>
+        <rating-label><![CDATA[Overall Form Rating]]></rating-label>
+        <rating-label-others><![CDATA[Overall Form Rating (Employee)]]></rating-label-others>
+        <default-rating><![CDATA[Select a rating...]]></default-rating>
+        <hidden-strength-threshold>0.0</hidden-strength-threshold>
+        <blind-spot-threshold>0.0</blind-spot-threshold>
+        <num-decimal-places>2</num-decimal-places>
+        <publish-button-label><![CDATA[Publish Content]]></publish-button-label>
+      </fm-sect-config>
+      <sect-weight>0.0</sect-weight>
+      <fm-sect-scale show-value="false">
+        <scale-source>1</scale-source>
+        <scale-id><![CDATA[Likert]]></scale-id>
+        <scale-type><![CDATA[null]]></scale-type>
+      </fm-sect-scale>
+      <meta-grp-label><![CDATA[Group]]></meta-grp-label>
+    </competency-sect>
+  </sf-pmreview>
+</sf-form>
